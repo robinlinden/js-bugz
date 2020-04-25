@@ -1,0 +1,14 @@
+---
+language: node_js
+dist: xenial
+os: linux
+node_js: "13"
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - npm run test
+  - npm run report-coverage
+  - npm run format && git diff --exit-code
