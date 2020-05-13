@@ -5,13 +5,15 @@ repository:
   name: js-bugz
   description: TokTok issue and pull request management bot
   topics: toktok, javascript, probot, github
-  has_issues: true
 
 branches:
   - name: "master"
     protection:
       required_status_checks:
         contexts:
+          - DeepCode
+          - "LGTM analysis: JavaScript"
+          - Hound
           - Travis CI - Pull Request
           - code-review/reviewable
           - codecov/patch
