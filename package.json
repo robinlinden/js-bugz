@@ -38,7 +38,7 @@
     "codecov": "^3.6.5",
     "eslint-plugin-typescript": "^0.14.0",
     "jest": "^25.4.0",
-    "nock": "^12.0.3",
+    "nock": "^13.0.4",
     "nodemon": "^2.0.3",
     "prettier": "^2.0.5",
     "ts-jest": "^25.1.0",
