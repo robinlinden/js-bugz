@@ -241,7 +241,7 @@ function printMetadata(metadata: IssueMetadata | null): string | null {
     name: string,
     value: any | null,
     text: string,
-    f?: (li: Cheerio) => Cheerio
+    f?: (li: cheerio.Cheerio) => cheerio.Cheerio
   ) => {
     if (!f) f = (li) => li;
     if (value !== null) {
